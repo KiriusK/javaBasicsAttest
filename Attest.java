@@ -9,32 +9,12 @@ import java.util.Set;
 public class Attest {
     public static void main(String[] args) {
         Set<Notebook> notebooksSet = new HashSet<>();
-        // notebooksSet.add(new Notebook("2", "320", "128", "Intel", "NVidia",
-        // "Windows", "Black"));
-        // notebooksSet.add(new Notebook("4", "500", "256", "AMD", "Ati", "Ubuntu",
-        // "Grey"));
-        // notebooksSet.add(new Notebook("6", "750", "512", "Intel", "Ati", "Windows",
-        // "White"));
-        // notebooksSet.add(new Notebook("8", "500", "1024", "AMD", "NVidia", "Ubuntu",
-        // "Black"));
-        // notebooksSet.add(new Notebook("16", "1000", "2048", "Intel", "Ati",
-        // "Windows", "Grey"));
-        // notebooksSet.add(new Notebook("2", "320", "128", "Intel", "Ati", "Windows",
-        // "Grey"));
-        // notebooksSet.add(new Notebook("4", "500", "256", "AMD", "NVidia", "Ubuntu",
-        // "Black"));
-        // notebooksSet.add(new Notebook("6", "750", "512", "Intel", "NVidia",
-        // "Windows", "Grey"));
-        // notebooksSet.add(new Notebook("8", "500", "1024", "AMD", "Ati", "Ubuntu",
-        // "Black"));
-        // notebooksSet.add(new Notebook("16", "1000", "2048", "Intel", "NVidia",
-        // "Windows", "White"));
-        fillNotebookSet(notebooksSet);
+        fillNotebookSet(notebooksSet, 1000);
         searchNotebook(notebooksSet);
     }
 
-    static void fillNotebookSet(Set<Notebook> nSet) {
-        for (int i = 0; i < 1000; i++) {
+    static void fillNotebookSet(Set<Notebook> nSet, int max) {
+        for (int i = 0; i < max; i++) {
             nSet.add(new Notebook());
         }
     }
